@@ -254,6 +254,56 @@ body::before {
 
 
 /* ~~~~		3.		TITLEBAR						~~~~ */
+
+.titleBar-AC4pGV {
+	z-index: 5001;
+}
+.titleBar-AC4pGV::after {
+	content: "";
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(var(--vtransparencycolor), calc(0.1 + var(--vguildchanneltransparency) * 2));
+}
+.titleBar-AC4pGV:not(.typeMacOS-3EmCyP)::after {
+	height: 22px;
+}
+.titleBar-AC4pGV.typeMacOS-3EmCyP::after {
+	height: 28px;
+	width: calc(100% - 4px);
+	margin: 2px;
+	border-radius: 5px;
+}
+.titleBar-AC4pGV.typeMacOS-3EmCyP,
+.titleBar-AC4pGV.typeMacOS-3EmCyP .macButtons-2MuSAC {
+	width: 72px;
+}
+.titleBar-AC4pGV.typeMacOS-3EmCyP.typeMacOSWithFrame-3R_i5S .macButtons-2MuSAC {
+	margin-top: 0;
+	margin-right: 0;
+}
+.platform-osx .wrapper-1Rf91z {
+	margin-top: 0;
+	padding-top: 32px;
+}
+.platform-osx .standardSidebarView-3F1I7i::before {
+	left: 72px;
+}
+.winButton-iRh8-Z {
+	color: rgb(var(--fontwhite3));
+}
+.winButtonMinMax-PBQ2gm:hover {
+	background-color: rgba(var(--vtransparencycolor), 0.2);
+}
+.winButtonClose-1HsbF-:hover,
+.winButtonMinMax-PBQ2gm:hover {
+	color: rgb(var(--fontwhite1));
+}
+
+
 /* ~~~~		4.		GUILDLIST						~~~~ */
 
 .childWrapper-anI2G9,										/* homebutton/acronym	innerwrap							*/
@@ -1182,6 +1232,7 @@ body::before {
 	background-color: rgba(var(--vtransparencycolor), 0.3);
 	border-left-color: rgb(var(--fontwhite4));
 }
+#app-mount .embedAuthorName-3mnTWj,							/* embed				author								*/
 #app-mount .embedFieldName-NFrena,							/* embed				fieldname							*/
 #app-mount .embedTitle-3OXDkz {								/* embed				title								*/
 	color: rgb(var(--fontwhite1)) !important;
@@ -7829,41 +7880,4 @@ html:only-child > head + body > div#app-mount.appMount-3lHmkl > div.app-1q1i1E >
 }
 html:only-child > head + body > div#app-mount.appMount-3lHmkl > div.app-1q1i1E > div.app-2rEoOp > div.layers-3iHuyZ.layers-3q14ss > div.layer-3QrUeG.baseLayer-35bLyl + div.layer-3QrUeG > div.standardSidebarView-3F1I7i > div.sidebarRegion-VFTUkN > div.sidebarRegionScroller-3MXcoP.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 > nav.sidebar-CFHs9e > div.side-8zPYf6 > div.info-1VyQPT {
 	position: relative !important;
-}
-html:only-child > head + body > div#app-mount.appMount-3lHmkl > div.app-1q1i1E > div.app-2rEoOp > div.layers-3iHuyZ.layers-3q14ss > div.layer-3QrUeG.baseLayer-35bLyl + div.layer-3QrUeG > div.standardSidebarView-3F1I7i > div.sidebarRegion-VFTUkN > div.sidebarRegionScroller-3MXcoP.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 > nav.sidebar-CFHs9e > div.side-8zPYf6 > div.info-1VyQPT::after {
-	content: "BasicBackground by" !important;
-	font-size: 12px !important;
-	color: var(--text-muted) !important;
-	cursor: pointer !important;
-	display: inline !important;
-	opacity: 1 !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	cursor: text !important;
-	visibility: visible !important;
-	position: relative !important;
-	top: unset !important;
-	left: unset !important;
-	bottom: unset !important;
-	right: unset !important;
-	transform: unset !important;
-	animation: unset !important;
-}
-html:only-child > head + body > div#app-mount.appMount-3lHmkl > div.app-1q1i1E > div.app-2rEoOp > div.layers-3iHuyZ.layers-3q14ss > div.layer-3QrUeG.baseLayer-35bLyl + div.layer-3QrUeG > div.standardSidebarView-3F1I7i > div.sidebarRegion-VFTUkN > div.sidebarRegionScroller-3MXcoP.thin-1ybCId.scrollerBase-289Jih.fade-2kXiP2 > nav.sidebar-CFHs9e > div.side-8zPYf6 > div.info-1VyQPT::before {
-	content: "DevilBro" !important;
-	font-size: 12px !important;
-	color: rgb(var(--vaccentcolor)) !important;
-	display: inline !important;
-	opacity: 1 !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	cursor: pointer !important;
-	visibility: visible !important;
-	position: absolute !important;
-	top: unset !important;
-	left: 113px !important;
-	bottom: 9px !important;
-	right: unset !important;
-	transform: unset !important;
-	animation: unset !important;
 }
